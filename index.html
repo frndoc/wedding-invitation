@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beautiful wedding invitation.">
+  <title>[Bride Name] & [Groom Name] — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader"><span>Our story begins here</span></div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Toggle music">♫</button>
+  <audio id="music" loop>
+    <source src="music/wedding-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">WE ARE GETTING MARRIED</p>
+        <h1>[Bride Name]<br><em>&</em><br>[Groom Name]</h1>
+        <p class="date">[Wedding Date]</p>
+        <button class="open-btn" id="openInvitation">Open Invitation</button>
+      </div>
+    </section>
+
+    <div id="invitation">
+      <section class="intro section">
+        <div class="container reveal">
+          <p class="eyebrow">TOGETHER WITH OUR FAMILIES</p>
+          <h2>We invite you to<br><em>celebrate with us</em></h2>
+          <p class="body-copy">We would be honored to have you with us as we begin this beautiful new chapter of our lives.</p>
+          <p class="script">[Bride Name] & [Groom Name]</p>
+        </div>
+      </section>
+
+      <section class="story section">
+        <div class="container reveal">
+          <p class="eyebrow">OUR STORY</p>
+          <h2>Two lives.<br><em>One story.</em></h2>
+          <div class="timeline">
+            <div><span>[DATE]</span><h3>Where it began</h3><p>Add your story here.</p></div>
+            <div><span>[DATE]</span><h3>A new chapter</h3><p>Add your story here.</p></div>
+            <div><span>[DATE]</span><h3>The question</h3><p>Add your engagement story here.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photo-break reveal"><img src="images/photo-1.jpg" alt="Couple photo"></section>
+
+      <section class="details section">
+        <div class="container reveal">
+          <p class="eyebrow">THE WEDDING DAY</p>
+          <h2>Join us for<br><em>our special day</em></h2>
+          <div class="details-grid">
+            <article><span>01</span><h3>Ceremony</h3><p>[Time]</p><p>[Venue Name]</p><p>[Address]</p><a href="#" class="text-link">View on Map →</a></article>
+            <article><span>02</span><h3>Reception</h3><p>[Time]</p><p>[Venue Name]</p><p>[Address]</p><a href="#" class="text-link">View on Map →</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="countdown section">
+        <div class="container reveal">
+          <p class="eyebrow">COUNTING THE DAYS</p>
+          <h2>Until we say<br><em>“I do.”</em></h2>
+          <div class="timer">
+            <div><strong id="days">00</strong><span>DAYS</span></div>
+            <div><strong id="hours">00</strong><span>HOURS</span></div>
+            <div><strong id="minutes">00</strong><span>MINUTES</span></div>
+            <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+          </div>
+          <p class="small-note">Set your wedding date in <code>script.js</code>.</p>
+        </div>
+      </section>
+
+      <section class="gallery section">
+        <div class="container reveal">
+          <p class="eyebrow">A FEW MOMENTS</p>
+          <h2>Our memories</h2>
+          <div class="gallery-grid">
+            <img src="images/photo-2.jpg" alt="Memory 1">
+            <img src="images/photo-3.jpg" alt="Memory 2">
+            <img src="images/photo-4.jpg" alt="Memory 3">
+            <img src="images/photo-5.jpg" alt="Memory 4">
+          </div>
+        </div>
+      </section>
+
+      <section class="dress section">
+        <div class="container reveal">
+          <p class="eyebrow">DRESS CODE</p>
+          <h2>Come dressed<br><em>with love</em></h2>
+          <p class="body-copy">[Dress code details]</p>
+          <div class="dress-colors"><span></span><span></span><span></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="rsvp section">
+        <div class="container reveal">
+          <p class="eyebrow">KINDLY RESPOND</p>
+          <h2>Will you<br><em>join us?</em></h2>
+          <p class="body-copy">Please confirm your attendance by [RSVP Deadline].</p>
+          <a class="primary-btn" href="[YOUR GOOGLE FORM LINK]" target="_blank" rel="noopener">RSVP NOW</a>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="closing-overlay"></div>
+        <div class="closing-content reveal">
+          <p class="eyebrow">WE CAN'T WAIT TO SEE YOU</p>
+          <h2>[Bride Name]<br><em>&</em><br>[Groom Name]</h2>
+          <p>[Wedding Date]</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
