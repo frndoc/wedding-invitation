@@ -37,7 +37,7 @@ const musicBtn = document.getElementById("musicBtn");
 musicBtn.addEventListener("click", async () => {
   if (music.paused) {
     try { await music.play(); musicBtn.classList.add("playing"); }
-    catch(e) { alert("Add your MP3 file as music/wedding-song.mp3 first."); }
+    catch(e) { alert("error na pula, check audio filee"); }
   } else {
     music.pause();
     musicBtn.classList.remove("playing");
